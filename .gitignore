@@ -2,3 +2,4 @@
 serv.txt
 logs/
 .prettierignore
+node_modules
