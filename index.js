@@ -1,8 +1,9 @@
 const fs = require("fs");
+require("dotenv").config();
 const sendNotify = require("./src/notify");
 const logger = require("./src/logger");
-const servers = ["127.0.0.1"];
-const port = 3001;
+const servers = process.env.SERVERS_LIST.split(", ") || ["127.0.0.1"];
+const port = process.env.SERVER_PORT || 3001;
 const filePath =
   "/Users/saeed/Documents/observer/notifier-socket/notifyer/serv.txt";
 // Function to notify servers of changes
