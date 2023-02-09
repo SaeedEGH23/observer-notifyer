@@ -1,5 +1,5 @@
 const fs = require("fs");
-const sendNotify = require("./notify");
+const sendNotify = require("./src/notify");
 const servers = ["127.0.0.1"];
 const port = 3001;
 const filePath =
@@ -11,6 +11,7 @@ const notifyServers = (changes) => {
   servers.forEach((server) => {
     // Send the changes to each server
     // (assuming a function called "sendChanges" exists to handle this)
+
     sendNotify(server, "changes", port)
       .then(() => console.log("Notification was sent"))
       .catch((err) => console.log("Error sending notification", err));
