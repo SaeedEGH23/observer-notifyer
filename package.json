@@ -1,11 +1,24 @@
 {
-  "name": "mainserver",
+  "name": "observer-notifyer",
   "version": "1.0.0",
   "description": "Observer server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Saeed Esmaeil Ghorbaninezhad",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaeedEGH23/observer-notifyer.git"
+  },
+  "keywords": [
+    "notification",
+    "observer",
+    "filechange"
+  ],
+  "bugs": {
+    "url": "https://github.com/SaeedEGH23/observer-notifyer/issues"
+  },
+  "homepage": "https://github.com/SaeedEGH23/observer-notifyer#readme"
 }
